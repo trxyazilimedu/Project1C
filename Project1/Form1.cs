@@ -29,6 +29,7 @@ namespace Project1
  
 
             lbrbaslik.Text = "Ürünler";
+            btninsert.Text = "Ekle";
             //lbxUrunler.Items.
 
 
@@ -51,6 +52,8 @@ namespace Project1
             maketurkish.Text = "Turkish";
             uruncountbaslik.Text = "Total Product:";
 
+            btninsert.Text = "Insert";
+
         }
 
         private void maketurkish_Click(object sender, EventArgs e)
@@ -59,7 +62,13 @@ namespace Project1
             lbrbaslik.Text = "Ürünler";
             makeing.Text = "İngilizce";
             maketurkish.Text = "Türkçe";
+            btninsert.Text = "Ekle";
             uruncountbaslik.Text = "Toplam Ürün:";
+        }
+
+        private void btninsert_Click(object sender, EventArgs e)
+        {
+            lbxUrunler.Items.Add(txburunset.Text);
         }
     }
 }

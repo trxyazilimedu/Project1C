@@ -35,6 +35,8 @@ namespace Project1
             this.uruncountbaslik = new System.Windows.Forms.Label();
             this.maketurkish = new System.Windows.Forms.Button();
             this.makeing = new System.Windows.Forms.Button();
+            this.txburunset = new System.Windows.Forms.TextBox();
+            this.btninsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbxUrunler
@@ -76,7 +78,7 @@ namespace Project1
             // 
             // maketurkish
             // 
-            this.maketurkish.Location = new System.Drawing.Point(512, 104);
+            this.maketurkish.Location = new System.Drawing.Point(626, 43);
             this.maketurkish.Name = "maketurkish";
             this.maketurkish.Size = new System.Drawing.Size(75, 23);
             this.maketurkish.TabIndex = 4;
@@ -86,7 +88,7 @@ namespace Project1
             // 
             // makeing
             // 
-            this.makeing.Location = new System.Drawing.Point(626, 104);
+            this.makeing.Location = new System.Drawing.Point(626, 72);
             this.makeing.Name = "makeing";
             this.makeing.Size = new System.Drawing.Size(75, 23);
             this.makeing.TabIndex = 5;
@@ -94,11 +96,30 @@ namespace Project1
             this.makeing.UseVisualStyleBackColor = true;
             this.makeing.Click += new System.EventHandler(this.makeing_Click);
             // 
+            // txburunset
+            // 
+            this.txburunset.Location = new System.Drawing.Point(328, 89);
+            this.txburunset.Name = "txburunset";
+            this.txburunset.Size = new System.Drawing.Size(100, 23);
+            this.txburunset.TabIndex = 6;
+            // 
+            // btninsert
+            // 
+            this.btninsert.Location = new System.Drawing.Point(328, 134);
+            this.btninsert.Name = "btninsert";
+            this.btninsert.Size = new System.Drawing.Size(100, 31);
+            this.btninsert.TabIndex = 7;
+            this.btninsert.Text = "button1";
+            this.btninsert.UseVisualStyleBackColor = true;
+            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btninsert);
+            this.Controls.Add(this.txburunset);
             this.Controls.Add(this.makeing);
             this.Controls.Add(this.maketurkish);
             this.Controls.Add(this.uruncountbaslik);
@@ -121,6 +142,8 @@ namespace Project1
         private System.Windows.Forms.Label uruncountbaslik;
         private System.Windows.Forms.Button maketurkish;
         private System.Windows.Forms.Button makeing;
+        private System.Windows.Forms.TextBox txburunset;
+        private System.Windows.Forms.Button btninsert;
     }
 }
 
