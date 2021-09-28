@@ -37,6 +37,10 @@ namespace Project1
             this.makeing = new System.Windows.Forms.Button();
             this.txburunset = new System.Windows.Forms.TextBox();
             this.btninsert = new System.Windows.Forms.Button();
+            this.lbxsepet = new System.Windows.Forms.ListBox();
+            this.lblsptbaslik = new System.Windows.Forms.Label();
+            this.btnsptinsert = new System.Windows.Forms.Button();
+            this.btnremovecart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbxUrunler
@@ -48,6 +52,7 @@ namespace Project1
             this.lbxUrunler.Name = "lbxUrunler";
             this.lbxUrunler.Size = new System.Drawing.Size(112, 298);
             this.lbxUrunler.TabIndex = 0;
+            this.lbxUrunler.SelectedIndexChanged += new System.EventHandler(this.lbxUrunler_SelectedIndexChanged);
             // 
             // lbrbaslik
             // 
@@ -78,7 +83,7 @@ namespace Project1
             // 
             // maketurkish
             // 
-            this.maketurkish.Location = new System.Drawing.Point(626, 43);
+            this.maketurkish.Location = new System.Drawing.Point(713, 12);
             this.maketurkish.Name = "maketurkish";
             this.maketurkish.Size = new System.Drawing.Size(75, 23);
             this.maketurkish.TabIndex = 4;
@@ -88,7 +93,7 @@ namespace Project1
             // 
             // makeing
             // 
-            this.makeing.Location = new System.Drawing.Point(626, 72);
+            this.makeing.Location = new System.Drawing.Point(617, 12);
             this.makeing.Name = "makeing";
             this.makeing.Size = new System.Drawing.Size(75, 23);
             this.makeing.TabIndex = 5;
@@ -98,14 +103,14 @@ namespace Project1
             // 
             // txburunset
             // 
-            this.txburunset.Location = new System.Drawing.Point(328, 89);
+            this.txburunset.Location = new System.Drawing.Point(617, 74);
             this.txburunset.Name = "txburunset";
             this.txburunset.Size = new System.Drawing.Size(100, 23);
             this.txburunset.TabIndex = 6;
             // 
             // btninsert
             // 
-            this.btninsert.Location = new System.Drawing.Point(328, 134);
+            this.btninsert.Location = new System.Drawing.Point(617, 117);
             this.btninsert.Name = "btninsert";
             this.btninsert.Size = new System.Drawing.Size(100, 31);
             this.btninsert.TabIndex = 7;
@@ -113,11 +118,55 @@ namespace Project1
             this.btninsert.UseVisualStyleBackColor = true;
             this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
             // 
+            // lbxsepet
+            // 
+            this.lbxsepet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbxsepet.FormattingEnabled = true;
+            this.lbxsepet.ItemHeight = 21;
+            this.lbxsepet.Location = new System.Drawing.Point(361, 53);
+            this.lbxsepet.Name = "lbxsepet";
+            this.lbxsepet.Size = new System.Drawing.Size(120, 298);
+            this.lbxsepet.TabIndex = 8;
+            // 
+            // lblsptbaslik
+            // 
+            this.lblsptbaslik.AutoSize = true;
+            this.lblsptbaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblsptbaslik.Location = new System.Drawing.Point(384, 22);
+            this.lblsptbaslik.Name = "lblsptbaslik";
+            this.lblsptbaslik.Size = new System.Drawing.Size(52, 21);
+            this.lblsptbaslik.TabIndex = 9;
+            this.lblsptbaslik.Text = "label1";
+            // 
+            // btnsptinsert
+            // 
+            this.btnsptinsert.Location = new System.Drawing.Point(202, 74);
+            this.btnsptinsert.Name = "btnsptinsert";
+            this.btnsptinsert.Size = new System.Drawing.Size(119, 51);
+            this.btnsptinsert.TabIndex = 10;
+            this.btnsptinsert.Text = "button1";
+            this.btnsptinsert.UseVisualStyleBackColor = true;
+            this.btnsptinsert.Click += new System.EventHandler(this.btnsptinsert_Click);
+            // 
+            // btnremovecart
+            // 
+            this.btnremovecart.Location = new System.Drawing.Point(202, 209);
+            this.btnremovecart.Name = "btnremovecart";
+            this.btnremovecart.Size = new System.Drawing.Size(119, 53);
+            this.btnremovecart.TabIndex = 11;
+            this.btnremovecart.Text = "button1";
+            this.btnremovecart.UseVisualStyleBackColor = true;
+            this.btnremovecart.Click += new System.EventHandler(this.btnremovecart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnremovecart);
+            this.Controls.Add(this.btnsptinsert);
+            this.Controls.Add(this.lblsptbaslik);
+            this.Controls.Add(this.lbxsepet);
             this.Controls.Add(this.btninsert);
             this.Controls.Add(this.txburunset);
             this.Controls.Add(this.makeing);
@@ -144,6 +193,10 @@ namespace Project1
         private System.Windows.Forms.Button makeing;
         private System.Windows.Forms.TextBox txburunset;
         private System.Windows.Forms.Button btninsert;
+        private System.Windows.Forms.ListBox lbxsepet;
+        private System.Windows.Forms.Label lblsptbaslik;
+        private System.Windows.Forms.Button btnsptinsert;
+        private System.Windows.Forms.Button btnremovecart;
     }
 }
 
